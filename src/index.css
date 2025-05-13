@@ -1,0 +1,38 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.app{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.error{
+    color: red;
+}
+
+.add-form{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    padding: 8px 0 8px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
