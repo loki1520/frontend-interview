@@ -4,13 +4,7 @@ export const UsersList = ((props) => {
     const { users } = props;
 
     return (
-        <div className="users-list">
-            {
-                users.map((user) => (
-                    <UserItem user={user} />
-                ))
-            }
-        </div>
+        <div className="users-list"></div>
     );
 })
 
@@ -21,7 +15,7 @@ const UserItem = (props) => {
     const { user } = props;
 
     return (
-        <div className="user" key={user.id}>
+        <div className="user">
             <div>{user.name}</div>
             <div>Возраст: {user.age}</div>
             {/* TODO удаление */}
