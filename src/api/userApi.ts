@@ -23,7 +23,7 @@ export function getUsers(shouldFail?: boolean): Promise<TUser[]> {
           return response.json();
         })
         .then((data) => {
-          const users = data?.map((user) => ({
+          const users = data?.map((user: {name: string, username: string, id: number}) => ({
             name: user.name,
             age: (user.name + user.username).length,
             id: user.id,

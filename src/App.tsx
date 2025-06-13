@@ -4,6 +4,7 @@
 import { getUsers, type TUser } from "./api/userApi"
 import { UsersList } from "./components/UsersList"
 import { AddForm } from "./components/AddForm"
+import { useState } from "react";
 
 
 // Задание
@@ -18,7 +19,7 @@ import { AddForm } from "./components/AddForm"
 // 5. Любые улучшения на свой вкус
 
 function App() {
-
+  const [users, setUsers] = useState([]);
   // TODO
   const deleteUserHandler = () => { }
 
